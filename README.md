@@ -1,8 +1,35 @@
-## Welcome to GitHub Pages
+## Generative i/o
 
-You can use the [editor on GitHub](https://github.com/joeldom/generative/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+source:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js
+2. https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.js
+
+refferences:
+
+1. https://medium.com/@engineerwithoutfear/using-p5-js-on-codepen-efd443fc661
+
+sandbox:
+
+1. https://editor.p5js.org/gbenedisgrab/sketches/IgHP-KOs
+
+```js
+function setup() {
+  createCanvas(500, 500);
+  background(120);
+}
+function draw() {
+  fill(233, 11, 44); // color to fill the shapes
+  stroke(1); // stroke color
+  strokeWeight(2);
+  line(20, 20, 160, 60); // line from (20,20) to (160,60)
+  fill(23, 44, 223);
+  rect(170, 170, 120, 70); // rectangle on (170,170) with 120x70 size
+  fill(223, 212, 44);
+  ellipse(120, 130, 100, 100); // ellipse on (120,130) with height 100 and width 100, which makes it a circle
+  noLoop();
+}
+```
 
 ### Markdown
 
@@ -12,7 +39,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 - Bulleted
@@ -27,11 +56,3 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joeldom/generative/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
